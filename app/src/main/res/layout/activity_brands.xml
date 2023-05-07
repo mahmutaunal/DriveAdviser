@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/colorPrimary"
-    tools:context=".cardetail.BrandsActivity">
+    tools:context=".activity.cardetail.BrandsActivity">
 
     <LinearLayout
         android:id="@+id/cars_title_linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp"
         android:elevation="6dp"
-        android:orientation="vertical"
         android:gravity="left"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="RtlHardcoded">
@@ -84,10 +83,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
                         android:fontFamily="@font/comfortaa"
                         android:text="Audi"
                         android:textAlignment="center"
@@ -117,10 +116,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
                         android:fontFamily="@font/comfortaa"
                         android:text="BMW"
                         android:textAlignment="center"
@@ -150,10 +149,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
                         android:fontFamily="@font/comfortaa"
                         android:text="Citroen"
                         android:textAlignment="center"
@@ -194,10 +193,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
                         android:fontFamily="@font/comfortaa"
                         android:text="Dacia"
                         android:textAlignment="center"
@@ -227,10 +226,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
                         android:fontFamily="@font/comfortaa"
                         android:text="Fiat"
                         android:textAlignment="center"
@@ -260,10 +259,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
                         android:fontFamily="@font/comfortaa"
                         android:text="Ford"
                         android:textAlignment="center"
@@ -278,9 +277,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal"
-                android:layout_marginTop="10dp"
                 tools:ignore="UselessParent">
 
                 <LinearLayout
@@ -304,10 +303,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
                         android:fontFamily="@font/comfortaa"
                         android:text="Honda"
                         android:textAlignment="center"
@@ -337,10 +336,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
                         android:fontFamily="@font/comfortaa"
                         android:text="Hyundai"
                         android:textAlignment="center"
@@ -370,10 +369,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
                         android:fontFamily="@font/comfortaa"
                         android:text="Mercedes"
                         android:textAlignment="center"
@@ -388,9 +387,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal"
-                android:layout_marginTop="10dp"
                 tools:ignore="UselessParent">
 
                 <LinearLayout
@@ -414,10 +413,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
                         android:fontFamily="@font/comfortaa"
                         android:text="Nissan"
                         android:textAlignment="center"
@@ -447,10 +446,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
                         android:fontFamily="@font/comfortaa"
                         android:text="Opel"
                         android:textAlignment="center"
@@ -480,10 +479,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
                         android:fontFamily="@font/comfortaa"
                         android:text="Peugeot"
                         android:textAlignment="center"
@@ -498,9 +497,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal"
-                android:layout_marginTop="10dp"
                 tools:ignore="UselessParent">
 
                 <LinearLayout
@@ -524,10 +523,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
                         android:fontFamily="@font/comfortaa"
                         android:text="Renault"
                         android:textAlignment="center"
@@ -557,10 +556,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
                         android:fontFamily="@font/comfortaa"
                         android:text="Seat"
                         android:textAlignment="center"
@@ -590,10 +589,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
                         android:fontFamily="@font/comfortaa"
                         android:text="Skoda"
                         android:textAlignment="center"
@@ -608,10 +607,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center_horizontal"
-                android:orientation="horizontal"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="50dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
                 tools:ignore="UselessParent">
 
                 <LinearLayout
@@ -635,10 +634,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
                         android:fontFamily="@font/comfortaa"
                         android:text="Toyota"
                         android:textAlignment="center"
@@ -668,10 +667,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
                         android:fontFamily="@font/comfortaa"
                         android:text="Volkswagen"
                         android:textAlignment="center"
@@ -701,10 +700,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
                         android:fontFamily="@font/comfortaa"
                         android:text="Volvo"
                         android:textAlignment="center"
@@ -724,11 +723,11 @@
         android:id="@+id/cars_splash_imageView"
         android:layout_width="580dp"
         android:layout_height="wrap_content"
-        android:scaleType="fitXY"
         android:layout_marginTop="-550dp"
+        android:scaleType="fitXY"
         android:src="@drawable/home_background"
-        app:layout_constraintHorizontal_bias="0.923"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ContentDescription" />
@@ -742,6 +741,6 @@
         android:src="@drawable/back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

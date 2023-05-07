@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/colorPrimary"
-    tools:context=".profile.ProfileActivity">
+    tools:context=".activity.profile.ProfileActivity">
 
     <ImageView
         android:id="@+id/profile_background"
@@ -17,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/profile_background"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription,VisualLintBounds" />
 
     <ImageView
         android:id="@+id/profile_back_button"
@@ -34,8 +33,8 @@
         android:id="@+id/profile_profilePhoto_imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/account"
         android:layout_marginTop="52dp"
+        android:src="@drawable/account"
         app:civ_border_color="@color/black"
         app:civ_border_width="2dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,8 +85,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:baselineAligned="false">
+            android:baselineAligned="false"
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:id="@+id/profile_theme_button"
@@ -251,9 +250,9 @@
         android:id="@+id/profile_edit_button"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginBottom="100dp"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
+        android:layout_marginBottom="100dp"
         android:background="@drawable/profile_edit_button_background"
         android:fontFamily="@font/comfortaa"
         android:gravity="center"
@@ -264,14 +263,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="@+id/linearLayout"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="VisualLintButtonSize" />
 
     <Button
         android:id="@+id/profile_logout_button"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
         android:background="@drawable/profile_logout_button_background"
         android:fontFamily="@font/comfortaa"
@@ -282,6 +282,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/profile_edit_button"
         app:layout_constraintStart_toStartOf="@+id/profile_edit_button"
-        app:layout_constraintTop_toBottomOf="@+id/profile_edit_button" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_edit_button"
+        tools:ignore="VisualLintButtonSize" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

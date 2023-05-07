@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/colorPrimary"
-    tools:context=".carsuggestion.CriteriaActivity">
+    tools:context=".activity.carsuggestion.CriteriaActivity">
 
     <LinearLayout
         android:id="@+id/criteria_title_linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp"
         android:elevation="6dp"
-        android:orientation="vertical"
         android:gravity="left"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="RtlHardcoded">
@@ -39,7 +38,8 @@
             android:text="@string/criteria_description_text"
             android:textColor="@color/white"
             android:textSize="22sp"
-            android:textStyle="italic" />
+            android:textStyle="italic"
+            tools:ignore="TextSizeCheck" />
 
     </LinearLayout>
 
@@ -56,23 +56,23 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:id="@+id/criteria_baggageSize_editTextLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/baggage_size_criteria_text"
-                app:helperTextTextColor="@color/red"
-                app:endIconMode="dropdown_menu"
-                app:boxStrokeColor="@color/blue3"
+                android:importantForAutofill="no"
                 app:boxBackgroundColor="@color/edittext_color2"
-                app:hintTextColor="@color/blue3"
-                android:importantForAutofill="no">
+                app:boxStrokeColor="@color/blue3"
+                app:endIconMode="dropdown_menu"
+                app:helperTextTextColor="@color/red"
+                app:hintTextColor="@color/blue3">
 
                 <AutoCompleteTextView
                     android:id="@+id/criteria_baggageSize_editText"
@@ -82,23 +82,23 @@
                     android:inputType="none"
                     android:textColor="?android:attr/textColorPrimary"
                     android:textSize="16sp"
-                    tools:ignore="LabelFor,SpeakableTextPresentCheck,TextContrastCheck" />
+                    tools:ignore="LabelFor,SpeakableTextPresentCheck,TextContrastCheck,VisualLintTextFieldSize" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:id="@+id/criteria_fuelEfficiency_editTextLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:hint="@string/fuel_efficiency_criteria_text"
-                app:helperTextTextColor="@color/red"
-                app:endIconMode="dropdown_menu"
-                app:boxStrokeColor="@color/blue3"
+                android:importantForAutofill="no"
                 app:boxBackgroundColor="@color/edittext_color2"
-                app:hintTextColor="@color/blue3"
-                android:importantForAutofill="no">
+                app:boxStrokeColor="@color/blue3"
+                app:endIconMode="dropdown_menu"
+                app:helperTextTextColor="@color/red"
+                app:hintTextColor="@color/blue3">
 
                 <AutoCompleteTextView
                     android:id="@+id/criteria_fuelEfficiency_editText"
@@ -108,23 +108,23 @@
                     android:inputType="none"
                     android:textColor="?android:attr/textColorPrimary"
                     android:textSize="16sp"
-                    tools:ignore="LabelFor,SpeakableTextPresentCheck,TextContrastCheck" />
+                    tools:ignore="LabelFor,SpeakableTextPresentCheck,TextContrastCheck,VisualLintTextFieldSize" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:id="@+id/criteria_performance_editTextLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:hint="@string/performance_criteria_text"
-                app:helperTextTextColor="@color/red"
-                app:endIconMode="dropdown_menu"
-                app:boxStrokeColor="@color/blue3"
+                android:importantForAutofill="no"
                 app:boxBackgroundColor="@color/edittext_color2"
-                app:hintTextColor="@color/blue3"
-                android:importantForAutofill="no">
+                app:boxStrokeColor="@color/blue3"
+                app:endIconMode="dropdown_menu"
+                app:helperTextTextColor="@color/red"
+                app:hintTextColor="@color/blue3">
 
                 <AutoCompleteTextView
                     android:id="@+id/criteria_performance_editText"
@@ -134,23 +134,23 @@
                     android:inputType="none"
                     android:textColor="?android:attr/textColorPrimary"
                     android:textSize="16sp"
-                    tools:ignore="LabelFor,SpeakableTextPresentCheck,TextContrastCheck" />
+                    tools:ignore="LabelFor,SpeakableTextPresentCheck,TextContrastCheck,VisualLintTextFieldSize" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:id="@+id/criteria_safety_editTextLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:hint="@string/security_criteria_text"
-                app:helperTextTextColor="@color/red"
-                app:endIconMode="dropdown_menu"
-                app:boxStrokeColor="@color/blue3"
+                android:importantForAutofill="no"
                 app:boxBackgroundColor="@color/edittext_color2"
-                app:hintTextColor="@color/blue3"
-                android:importantForAutofill="no">
+                app:boxStrokeColor="@color/blue3"
+                app:endIconMode="dropdown_menu"
+                app:helperTextTextColor="@color/red"
+                app:hintTextColor="@color/blue3">
 
                 <AutoCompleteTextView
                     android:id="@+id/criteria_safety_editText"
@@ -160,23 +160,23 @@
                     android:inputType="none"
                     android:textColor="?android:attr/textColorPrimary"
                     android:textSize="16sp"
-                    tools:ignore="LabelFor,SpeakableTextPresentCheck,TextContrastCheck" />
+                    tools:ignore="LabelFor,SpeakableTextPresentCheck,TextContrastCheck,VisualLintTextFieldSize" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:id="@+id/criteria_gearbox_editTextLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:hint="@string/gearbox_criteria_text"
-                app:helperTextTextColor="@color/red"
-                app:endIconMode="dropdown_menu"
-                app:boxStrokeColor="@color/blue3"
+                android:importantForAutofill="no"
                 app:boxBackgroundColor="@color/edittext_color2"
-                app:hintTextColor="@color/blue3"
-                android:importantForAutofill="no">
+                app:boxStrokeColor="@color/blue3"
+                app:endIconMode="dropdown_menu"
+                app:helperTextTextColor="@color/red"
+                app:hintTextColor="@color/blue3">
 
                 <AutoCompleteTextView
                     android:id="@+id/criteria_gearbox_editText"
@@ -186,23 +186,23 @@
                     android:inputType="none"
                     android:textColor="?android:attr/textColorPrimary"
                     android:textSize="16sp"
-                    tools:ignore="LabelFor,SpeakableTextPresentCheck,TextContrastCheck" />
+                    tools:ignore="LabelFor,SpeakableTextPresentCheck,TextContrastCheck,VisualLintTextFieldSize" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:id="@+id/criteria_chassisType_editTextLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:hint="@string/chassis_type_criteria_text"
-                app:helperTextTextColor="@color/red"
-                app:endIconMode="dropdown_menu"
-                app:boxStrokeColor="@color/blue3"
+                android:importantForAutofill="no"
                 app:boxBackgroundColor="@color/edittext_color2"
-                app:hintTextColor="@color/blue3"
-                android:importantForAutofill="no">
+                app:boxStrokeColor="@color/blue3"
+                app:endIconMode="dropdown_menu"
+                app:helperTextTextColor="@color/red"
+                app:hintTextColor="@color/blue3">
 
                 <AutoCompleteTextView
                     android:id="@+id/criteria_chassisType_editText"
@@ -212,23 +212,23 @@
                     android:inputType="none"
                     android:textColor="?android:attr/textColorPrimary"
                     android:textSize="16sp"
-                    tools:ignore="LabelFor,SpeakableTextPresentCheck,TextContrastCheck" />
+                    tools:ignore="LabelFor,SpeakableTextPresentCheck,TextContrastCheck,VisualLintTextFieldSize" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:id="@+id/criteria_wheelDrive_editTextLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:hint="@string/wheel_drive_criteria_text"
-                app:helperTextTextColor="@color/red"
-                app:endIconMode="dropdown_menu"
-                app:boxStrokeColor="@color/blue3"
+                android:importantForAutofill="no"
                 app:boxBackgroundColor="@color/edittext_color2"
-                app:hintTextColor="@color/blue3"
-                android:importantForAutofill="no">
+                app:boxStrokeColor="@color/blue3"
+                app:endIconMode="dropdown_menu"
+                app:helperTextTextColor="@color/red"
+                app:hintTextColor="@color/blue3">
 
                 <AutoCompleteTextView
                     android:id="@+id/criteria_wheelDrive_editText"
@@ -238,7 +238,7 @@
                     android:inputType="none"
                     android:textColor="?android:attr/textColorPrimary"
                     android:textSize="16sp"
-                    tools:ignore="LabelFor,SpeakableTextPresentCheck,TextContrastCheck" />
+                    tools:ignore="LabelFor,SpeakableTextPresentCheck,TextContrastCheck,VisualLintTextFieldSize" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -328,14 +328,14 @@
         android:id="@+id/criteria_splash_imageView"
         android:layout_width="580dp"
         android:layout_height="wrap_content"
-        android:scaleType="fitXY"
         android:layout_marginTop="-550dp"
+        android:scaleType="fitXY"
         android:src="@drawable/home_background"
-        app:layout_constraintHorizontal_bias="0.923"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription,VisualLintBounds" />
 
     <ImageView
         android:id="@+id/criteria_back_button"

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/colorPrimary"
-    tools:context=".loginandregister.RegisterActivity">
+    tools:context=".activity.loginandregister.RegisterActivity">
 
     <ImageView
         android:id="@+id/register_circle_1"
@@ -17,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:tint="@color/orange2"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
+        tools:ignore="ContentDescription,ImageContrastCheck,VisualLintBounds" />
 
     <ImageView
         android:id="@+id/register_circle_2"
@@ -29,7 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:tint="@color/orange1"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription,VisualLintBounds" />
 
     <ImageView
         android:id="@+id/register_circle_3"
@@ -38,10 +37,10 @@
         android:layout_marginEnd="-100dp"
         android:layout_marginBottom="-40dp"
         android:src="@drawable/circle"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:tint="@color/orange2"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription,VisualLintBounds" />
 
     <ImageView
         android:id="@+id/register_circle_4"
@@ -49,10 +48,10 @@
         android:layout_height="320dp"
         android:layout_marginBottom="-240dp"
         android:src="@drawable/circle"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:tint="@color/orange1"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription,ImageContrastCheck,VisualLintBounds" />
 
     <ImageView
         android:id="@+id/register_back_button"
@@ -94,33 +93,33 @@
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/register_profilePhoto_imageView"
-                    app:civ_border_width="2dp"
-                    app:civ_border_color="@color/imageView_round_color"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:layout_marginTop="20dp"
                     android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
                     android:src="@drawable/profile_photo"
+                    app:civ_border_color="@color/imageView_round_color"
+                    app:civ_border_width="2dp"
                     tools:ignore="ContentDescription,ImageContrastCheck" />
 
                 <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:id="@+id/register_username_editTextLayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="30dp"
-                    android:layout_marginStart="30dp"
                     android:hint="@string/username_text"
-                    app:counterEnabled="true"
-                    app:counterMaxLength="50"
-                    app:startIconDrawable="@drawable/ic_person"
-                    app:startIconTint="@color/orange2"
-                    app:endIconMode="clear_text"
+                    android:importantForAutofill="no"
                     app:boxBackgroundColor="@color/edittext_color"
                     app:boxStrokeColor="@color/orange2"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="50"
+                    app:endIconMode="clear_text"
                     app:hintTextColor="@color/orange2"
-                    android:importantForAutofill="no">
+                    app:startIconDrawable="@drawable/ic_person"
+                    app:startIconTint="@color/orange2">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/register_username_editText"
@@ -130,28 +129,28 @@
                         android:inputType="textPersonName"
                         android:maxLength="50"
                         android:textColor="?android:attr/textColorPrimary"
-                        tools:ignore="TextContrastCheck" />
+                        tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:id="@+id/register_password_editTextLayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
                     android:hint="@string/password_text"
-                    app:counterEnabled="true"
-                    app:counterMaxLength="8"
-                    app:startIconDrawable="@drawable/ic_key"
-                    app:startIconTint="@color/orange2"
-                    app:endIconMode="password_toggle"
+                    android:importantForAutofill="no"
                     app:boxBackgroundColor="@color/edittext_color"
                     app:boxStrokeColor="@color/orange2"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="8"
+                    app:endIconMode="password_toggle"
                     app:hintTextColor="@color/orange2"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginEnd="30dp"
-                    android:importantForAutofill="no">
+                    app:startIconDrawable="@drawable/ic_key"
+                    app:startIconTint="@color/orange2">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/register_password_editText"
@@ -160,28 +159,28 @@
                         android:fontFamily="@font/comfortaa"
                         android:inputType="textPassword"
                         android:textColor="?android:attr/textColorPrimary"
-                        tools:ignore="TextContrastCheck" />
+                        tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:id="@+id/register_password2_editTextLayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
                     android:hint="@string/password2_text"
-                    app:counterEnabled="true"
-                    app:counterMaxLength="8"
-                    app:startIconDrawable="@drawable/ic_key"
-                    app:startIconTint="@color/orange2"
-                    app:endIconMode="password_toggle"
+                    android:importantForAutofill="no"
                     app:boxBackgroundColor="@color/edittext_color"
                     app:boxStrokeColor="@color/orange2"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="8"
+                    app:endIconMode="password_toggle"
                     app:hintTextColor="@color/orange2"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginEnd="30dp"
-                    android:importantForAutofill="no">
+                    app:startIconDrawable="@drawable/ic_key"
+                    app:startIconTint="@color/orange2">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/register_password2_editText"
@@ -190,29 +189,29 @@
                         android:fontFamily="@font/comfortaa"
                         android:inputType="textPassword"
                         android:textColor="?android:attr/textColorPrimary"
-                        tools:ignore="TextContrastCheck" />
+                        tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:id="@+id/register_email_editTextLayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="30dp"
-                    android:layout_marginStart="30dp"
                     android:layout_marginBottom="30dp"
-                    app:counterEnabled="true"
-                    app:counterMaxLength="50"
                     android:hint="@string/email_text"
-                    app:startIconDrawable="@drawable/ic_email"
-                    app:startIconTint="@color/orange2"
-                    app:endIconMode="clear_text"
+                    android:importantForAutofill="no"
                     app:boxBackgroundColor="@color/edittext_color"
                     app:boxStrokeColor="@color/orange2"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="50"
+                    app:endIconMode="clear_text"
                     app:hintTextColor="@color/orange2"
-                    android:importantForAutofill="no">
+                    app:startIconDrawable="@drawable/ic_email"
+                    app:startIconTint="@color/orange2">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/register_email_editText"
@@ -222,7 +221,7 @@
                         android:inputType="textEmailAddress"
                         android:maxLength="50"
                         android:textColor="?android:attr/textColorPrimary"
-                        tools:ignore="TextContrastCheck" />
+                        tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 

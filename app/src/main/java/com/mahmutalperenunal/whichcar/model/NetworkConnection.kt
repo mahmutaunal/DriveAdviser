@@ -10,9 +10,10 @@ import android.net.*
 import android.os.Build
 import androidx.lifecycle.LiveData
 
-class NetworkConnection(private val context: Context): LiveData<Boolean>() {
+class NetworkConnection(private val context: Context) : LiveData<Boolean>() {
 
-    private var connectivityManager: ConnectivityManager = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+    private var connectivityManager: ConnectivityManager =
+        context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
 
     private lateinit var networkCallback: ConnectivityManager.NetworkCallback
 
@@ -25,9 +26,11 @@ class NetworkConnection(private val context: Context): LiveData<Boolean>() {
             Build.VERSION.SDK_INT >= Build.VERSION_CODES.N -> {
                 connectivityManager.registerDefaultNetworkCallback(connectivityManagerCallback())
             }
+
             Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP -> {
                 lollipopNetworkRequest()
             }
+
             else -> {
                 context.registerReceiver(
                     networkReceiver,

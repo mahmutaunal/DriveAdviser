@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/colorPrimary"
-    tools:context=".carsuggestion.SuggestedCarsActivity">
+    tools:context=".activity.carsuggestion.SuggestedCarsActivity">
 
     <LinearLayout
         android:id="@+id/suggestedCar_title_linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp"
         android:elevation="6dp"
-        android:orientation="vertical"
         android:gravity="left"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="RtlHardcoded">
@@ -39,7 +38,8 @@
             android:text="@string/suggestion_description_text"
             android:textColor="@color/white"
             android:textSize="22sp"
-            android:textStyle="italic" />
+            android:textStyle="italic"
+            tools:ignore="TextSizeCheck" />
 
     </LinearLayout>
 
@@ -72,14 +72,14 @@
         android:id="@+id/suggestedCar_splash_imageView"
         android:layout_width="580dp"
         android:layout_height="wrap_content"
-        android:scaleType="fitXY"
         android:layout_marginTop="-550dp"
+        android:scaleType="fitXY"
         android:src="@drawable/home_background"
-        app:layout_constraintHorizontal_bias="0.923"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription,VisualLintBounds" />
 
     <ImageView
         android:id="@+id/suggestedCar_back_button"
@@ -120,15 +120,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:visibility="gone"
         android:fontFamily="@font/comfortaa"
-        android:textAlignment="center"
         android:text="@string/no_model_text"
+        android:textAlignment="center"
         android:textColor="?android:attr/textColorPrimary"
         android:textSize="20sp"
         android:textStyle="italic"
-        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/suggestedCar_noModel_imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

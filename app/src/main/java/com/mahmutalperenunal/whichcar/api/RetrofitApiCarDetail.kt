@@ -1,6 +1,6 @@
 package com.mahmutalperenunal.whichcar.api
 
-import com.mahmutalperenunal.whichcar.model.CarDetail
+import com.mahmutalperenunal.whichcar.model.car.CarDetail
 import retrofit2.Call
 import retrofit2.http.*
 

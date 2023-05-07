@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.google.android.material.card.MaterialCardView
 import com.mahmutalperenunal.whichcar.R
-import com.mahmutalperenunal.whichcar.model.CarDetail
+import com.mahmutalperenunal.whichcar.model.car.CarDetail
 
 class CarAdapter(val context: Context): RecyclerView.Adapter<CarAdapter.MyViewHolder>() {
 

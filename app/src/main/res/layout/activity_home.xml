@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/colorPrimary"
-    tools:context=".home.HomeActivity">
+    tools:context=".activity.home.HomeActivity">
 
     <LinearLayout
         android:id="@+id/home_splash_linearLayout"
@@ -37,18 +36,18 @@
             android:text="@string/username_text"
             android:textColor="@color/white"
             android:textSize="26sp" />
-        
+
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/home_title_linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp"
         android:elevation="6dp"
-        android:orientation="vertical"
         android:gravity="left"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="RtlHardcoded">
@@ -71,7 +70,8 @@
             android:text="@string/home_title_description_text"
             android:textColor="@color/white"
             android:textSize="22sp"
-            android:textStyle="italic" />
+            android:textStyle="italic"
+            tools:ignore="TextSizeCheck" />
 
     </LinearLayout>
 
@@ -79,30 +79,30 @@
         android:id="@+id/home_menu_linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
         android:elevation="6dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.6"
-        android:layout_marginTop="340dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_marginBottom="50dp"
             android:orientation="horizontal"
-            android:layout_gravity="center_horizontal"
             tools:ignore="UselessParent">
 
             <LinearLayout
                 android:id="@+id/home_carSuggestion_button"
-                android:background="?attr/selectableItemBackground"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
-                android:orientation="vertical"
+                android:background="?attr/selectableItemBackground"
                 android:gravity="center_horizontal"
+                android:orientation="vertical"
                 tools:ignore="UseCompoundDrawables">
 
                 <ImageView
@@ -119,17 +119,18 @@
                     android:text="@string/car_suggestion_text"
                     android:textAlignment="center"
                     android:textColor="?android:attr/textColorPrimary"
-                    android:textSize="22sp" />
+                    android:textSize="22sp"
+                    tools:ignore="TextSizeCheck" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/home_carDetail_button"
-                android:background="?attr/selectableItemBackground"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:background="?attr/selectableItemBackground"
                 android:gravity="center_horizontal"
+                android:orientation="vertical"
                 tools:ignore="UseCompoundDrawables">
 
                 <ImageView
@@ -146,7 +147,8 @@
                     android:text="@string/car_detail_text"
                     android:textAlignment="center"
                     android:textColor="?android:attr/textColorPrimary"
-                    android:textSize="22sp" />
+                    android:textSize="22sp"
+                    tools:ignore="TextSizeCheck" />
 
             </LinearLayout>
 
@@ -155,17 +157,17 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_marginBottom="50dp"
             android:orientation="horizontal"
-            android:layout_gravity="center_horizontal"
             tools:ignore="UselessParent">
 
             <LinearLayout
                 android:id="@+id/home_profile_button"
-                android:background="?attr/selectableItemBackground"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
+                android:background="?attr/selectableItemBackground"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 tools:ignore="UseCompoundDrawables">
@@ -191,11 +193,11 @@
 
             <LinearLayout
                 android:id="@+id/home_about_button"
-                android:background="?attr/selectableItemBackground"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:background="?attr/selectableItemBackground"
                 android:gravity="center_horizontal"
+                android:orientation="vertical"
                 tools:ignore="UseCompoundDrawables">
 
                 <ImageView
@@ -226,10 +228,10 @@
         android:layout_height="710dp"
         android:scaleType="fitXY"
         android:src="@drawable/home_background"
-        app:layout_constraintHorizontal_bias="0.923"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription,VisualLintBounds" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

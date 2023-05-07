@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/colorPrimary"
-    tools:context=".profile.FavoritesActivity">
+    tools:context=".activity.profile.FavoritesActivity">
 
     <LinearLayout
         android:id="@+id/profile_favourites_title_linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp"
         android:elevation="6dp"
-        android:orientation="vertical"
         android:gravity="left"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="RtlHardcoded">
@@ -63,10 +62,10 @@
         android:layout_width="wrap_content"
         android:layout_height="150dp"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/profile_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_background"
         tools:ignore="ContentDescription" />
 
     <ImageView
@@ -108,15 +107,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:visibility="gone"
         android:fontFamily="@font/comfortaa"
-        android:textAlignment="center"
         android:text="@string/no_model_text"
+        android:textAlignment="center"
         android:textColor="?android:attr/textColorPrimary"
         android:textSize="20sp"
         android:textStyle="italic"
-        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/profile_favourites_noModel_imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

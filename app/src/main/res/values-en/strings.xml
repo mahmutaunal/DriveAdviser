@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Car Suggestion</string>
+    <string name="app_name">DriveAdvisor</string>
     <string name="register_text">Register</string>
     <string name="login_text">Login</string>
     <string name="password_text">Password</string>

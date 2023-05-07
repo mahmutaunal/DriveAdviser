@@ -1,9 +1,7 @@
 package com.mahmutalperenunal.whichcar.api
 
-import com.mahmutalperenunal.whichcar.model.CarDetail
-import com.mahmutalperenunal.whichcar.model.CarSuggestion
-import okhttp3.MultipartBody
-import okhttp3.RequestBody
+import com.mahmutalperenunal.whichcar.model.car.CarDetail
+import com.mahmutalperenunal.whichcar.model.car.CarSuggestion
 import retrofit2.Call
 import retrofit2.http.*
 
