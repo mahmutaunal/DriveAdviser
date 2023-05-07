@@ -62,6 +62,21 @@ width="200"
 width="200"
     hspace="10" vspace="10">](/readme/car_detail-dark.png)
 
+##
+##
+##
+##
+##
+##
+##
+##
+##
+##
+##
+##
+##
+##
+
 ## Permissions
 
 DriveAdvisor requires the following permissions:
